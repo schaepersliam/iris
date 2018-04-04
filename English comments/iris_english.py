@@ -22,4 +22,6 @@ features_train, features_test, labels_train, labels_test = model_selection.train
 clf = SVC(kernel='linear')
 clf.fit(features_train, labels_train)
 accuacy = clf.score(features_test, labels_test)
+pred = clf.predict([[7.5,3.1,4.9,1.2]])
 print(accuacy)
+print(pred)
